@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/gfish/Desktop/fish/myc/algorithm/ListNode/ListNode.h
+
+/Users/gfish/Desktop/fish/myc/algorithm/main.cpp
+iostream
+-
+ListNode/ListNode.h
+/Users/gfish/Desktop/fish/myc/algorithm/ListNode/ListNode.h
+
