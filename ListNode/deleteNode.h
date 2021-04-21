@@ -20,7 +20,7 @@ void DeleteList(ListNode *pHead,ListNode*pToBeDeleted){
         delete pNext;
         pNext= nullptr;
     }
-    else if(pHead==pToBeDeleted)
+    elseif(pHead==pToBeDeleted)
     {
         //要删除的是头节点
         delete pToBeDeleted;
