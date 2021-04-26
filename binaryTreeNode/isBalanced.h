@@ -5,7 +5,7 @@
 #ifndef ALGORITHM_ISBALANCED_H
 #define ALGORITHM_ISBALANCED_H
 
-bool IsBalanced(BinaryTreeNode *pRoot){
+bool IsBalanced(TreeNode *pRoot){
     if(pRoot== nullptr) return true;
     int left=TreeDepth(pRoot->left);
     int right=TreeDepth(pRoot->right);
@@ -15,7 +15,7 @@ bool IsBalanced(BinaryTreeNode *pRoot){
 }
 
 //判断 平衡节点
-bool IsBalancedFunc(BinaryTreeNode *pRoot,int *depth){
+bool IsBalancedFunc(TreeNode *pRoot,int *depth){
     if(pRoot== nullptr){
         depth=0;
         return true;
@@ -31,7 +31,7 @@ bool IsBalancedFunc(BinaryTreeNode *pRoot,int *depth){
     return false;
 }
 
-bool IsBalance(BinaryTreeNode *pRoot){
+bool IsBalance(TreeNode *pRoot){
     int depth=0;
     return IsBalancedFunc(pRoot,&depth);
 }

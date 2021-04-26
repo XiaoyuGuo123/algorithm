@@ -5,16 +5,16 @@
 #ifndef ALGORITHM_TREEDEPTH_H
 #define ALGORITHM_TREEDEPTH_H
 
-struct BinaryTreeNode{
+struct TreeNode{
     int     val;
-    BinaryTreeNode *left;
-    BinaryTreeNode *right;
+    TreeNode *left;
+    TreeNode *right;
 };
 
 //base case: 节点==nullptr, 深度=0
 //问左子树 要信息，问右子树要信息
 //条件是什么：左右子树，谁的大，取谁加一
-int TreeDepth(BinaryTreeNode *pRoot){
+int TreeDepth(TreeNode *pRoot){
     if(pRoot== nullptr) return 0;
     int left=TreeDepth(pRoot->left);
     int right=TreeDepth(pRoot->right);
