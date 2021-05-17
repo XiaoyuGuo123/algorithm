@@ -9,13 +9,13 @@
 
 int count = 0, res = 0;
 
-int kthLargest(BinaryTreeNode* root, int k) {
+int kthLargest(TreeNode* root, int k) {
     inorder(root, k);
 
     return res;
 }
 
-void inorder(BinaryTreeNode* root, int k) {
+void inorder(TreeNode* root, int k) {
     if (!root) {
         return;
     }
