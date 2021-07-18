@@ -5,6 +5,7 @@
 #ifndef ALGORITHM_ISSYSMMETRICAL_H
 #define ALGORITHM_ISSYSMMETRICAL_H
 
+//对称二叉树
 bool isSymmertric(TreeNode* root){
     return isSymmertrical(root,root);
 }
